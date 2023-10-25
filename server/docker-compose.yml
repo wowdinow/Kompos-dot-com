@@ -1,0 +1,21 @@
+services:
+    orchestrator:
+        build: ./orchestrator
+        ports:
+            - "80:4000"
+        environment:
+            REDIS_PASS: ${REDIS_PASS}
+            APP_URL: 'http://app-service:4002'
+            USER_URL: 'http://user-service:4001'
+    app-service:
+        build: ./services/app
+        ports:
+            - "4002:4002"
+        environment:
+            SECRET: ${SECRET}
+            DATABASE_URL: ${DATABASE_URL}
+            NODE_ENV: "production"
+    user-service:
+        build: ./services/user
+        ports:
+            - "4001:4001"

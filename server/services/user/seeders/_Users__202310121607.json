@@ -1,0 +1,13 @@
+[
+	{
+		"id" : 1,
+		"username" : "admin1",
+		"email" : "admin1@mail.com",
+		"password" : "$2a$10$ul8iuCZtszEZnuxa3YLDbeCv.XtHY7M5oTsHFJtcirryN6oIOrZoK",
+		"role" : "admin",
+		"phoneNumber" : "0808080808080",
+		"address" : "Jalan Sultan Iskandar",
+		"createdAt" : "2023-10-08T08:46:37.766Z",
+		"updatedAt" : "2023-10-08T08:46:37.766Z"
+	}
+]
